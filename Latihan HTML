@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<lang:id>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pramukrida</title>
+    </head>
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="#">Anggota</a>
+    <a href="#">Kegiatan</a>
+    <a href="#">Pengurus</a>
+    <a href="#">Historis Anggota</a>
+</nav>
+<body>
+    
+</tbody>
+<body>
+    <h1>data anggota pramuka regu harimau</h1>
+    <p>Muhammad Dzakwaan Firmansyah</p>
+    <p>belum tersedia</p>
+    <p>Rafka Ardian Saputra</p>
+    <a href="Rafka Ardian Saputra">Rafka Ardian Saputra, pemilik TKK utama Pramukrida</a>
+    <p>Desta Riswan Wardhana</p>
+    <a href="Desta Riswa Wardhana">Desta Riswan Wardhana, Bendahara Pramukrida kelas 7</a>
+    <p>Fahri Syayuf Ivan</p>
+    <a href="Fahri Syayuf Ivan">Fahri Syayuf Ivan, Anggota kelas 8</a>
+    <p>Alif Asyraf H.E</p>
+    <p> Belum Tersedia</p>
+    <p>Eygar Drago Mahardika</p>
+    <p> Belum tersedia</p>
+</body>
+<footer>
+    <dif>&copy;Data milik Pelajar IPA tahu 2025</dif>
+</footer>

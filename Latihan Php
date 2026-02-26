@@ -1,0 +1,9 @@
+<?php 
+    $nama = "Rafka":
+    $kelas = "9K";
+    $nilai = 100
+    $nilai2 = 100
+    $sekolah = "SMPN 2 Krian";  
+    echo "$nama berada di kelas $kelas serta memiliki nilai matematika TKA serta rapot sebesar$nilai 
+    dan nilai bahasa indonesia TKA dan rapot sebesar $nilai2"
+?>

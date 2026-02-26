@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<lang:id>
+<html>
+    <head>
+    <title>Desta Riswan Wardhana, Bendahara Pramukrida</title>
+    </head>
+<body>
+    <h1>Desta Riswan Wardhana, Bendahara Pramukrida dan kelas 7 berpengaruh</h1>
+    <p>panggilannya adalah Desta dan masih kelas 7 tapi sudah memiliki penaruh dan posisi di kepengurusan dewan Pramukrida</p>
+    <p>Mengikuti pramuka sejak awal serta mengikuti LT 2 2024 hingga terpilih menjadi bagian dari LT 2 2025 sampai LT 3 2025</p>
+</body>
+<tbody>
+    <table border="3">
+        <tr>
+            <td>Nama Kegiatan</td>
+            <td>Hasil Kegiatan</td>
+            <td>Tahun</td>
+            <td>jabatan</td>
+        </tr>
+        <tr>
+            <td>Lomba Tingkat 2</td>
+            <td>Juara 1</td>
+            <td>2025</td>
+            <td>anggota</td>
+        </tr>
+        <tr>
+            <td>Lomba Tingkat 3</td>
+            <td>juara 3</td>
+            <td>2025</td>
+            <td>anggota</td>
+        </tr>
+        <tr>
+            <td>Jelajah Kota</td>
+            <td>peserta</td>
+            <td>2025</td>
+            <td>Bendahara Regu</td>
+        </tr>
+    </table>
+</tbody>
+<body>
+    <h1>Dewan Pengurus pertama dari kelas 7</h1>
+    <h2>Dewan Pengurus dari kelas 7 dengan jabatan Bendahara Putra Regu Harimau</h2>
+</body>
+
+
+
+<body>
+    <h1 style="text-align: center;">Pesan Dari Mas Rafka</h1>
+    <pre>
+       Pesanku. Ya sudah dadah. 
+    </pre>
+    
+</body>
+<style>
+    @keyfrmes geser {
+        from {transform: translateX(0);}
+        to {transform: translateX(100%);}
+    }
+    img {
+        animation: geser 5s linear infinite;
+    }
+</style>
+<body>
+    <img src="20251116_082416-COLLAGE.jpg" style="width: 40px; height: 40px;">
+</bod>
+<body>
+    <img src="20251116_082416-COLLAGE.jpg" class="imageslebew" style="width: 600px; height: 440px;">
+</body>
+<style>
+    @keyframes jalan-jalandanmandek {
+        0% {transform: translateX(0); opacity: 0;}
+        50% {opacity: 1;}
+        100% {transform: translateX(50px); opacity: 1;} 
+    }
+    .imageslebew {
+        animation-name: jalan-jalandanmandek;
+        animation-duration: 3s;
+        animation-timing-function: ease-out;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;}
+</style>
+
+

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ocean Cinematic</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* ================= HERO ================= */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to top, #1e3c72 50%, #2a5298);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ombak */
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 200%;
+  height: 150px;
+  background: linear-gradient(to right, #004e92, #000428, #004e92);
+  animation: waveMove 10s linear infinite;
+}
+
+@keyframes waveMove {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* Kapal */
+.ship {
+  position: absolute;
+  bottom: 130px;
+  left: -200px;
+  font-size: 70px;
+  animation: shipMove 20s linear infinite, shipRock 3s ease-in-out infinite;
+}
+
+@keyframes shipMove {
+  from { left: -200px; }
+  to { left: 110%; }
+}
+
+@keyframes shipRock {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(3deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Air Terjun */
+.waterfall {
+  position: absolute;
+  bottom: 150px;
+  left: 120px;
+  width: 60px;
+  height: 200px;
+  background: linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.9),
+      rgba(30,144,255,0.8),
+      rgba(0,0,255,0.6)
+  );
+  background-size: 100% 150px;
+  animation: fall 1s linear infinite;
+  border-radius: 20px;
+}
+
+@keyframes fall {
+  from { background-position: 0 0; }
+  to { background-position: 0 150px; }
+}
+
+/* Percikan */
+.splash {
+  position: absolute;
+  bottom: 120px;
+  left: 110px;
+  width: 80px;
+  height: 30px;
+  background: radial-gradient(circle, rgba(255,255,255,0.8), transparent);
+  animation: splashAnim 1s ease-in-out infinite;
+}
+
+@keyframes splashAnim {
+  0% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.3); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.7; }
+}
+
+/* Kabut */
+.fog {
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, rgba(255,255,255,0.2), transparent);
+}
+
+/* ================= SECTION ================= */
+.section {
+  padding: 120px 20px;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 220px;
+  height: 160px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover {
+  transform: scale(1.15);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+  <div class="waterfall"></div>
+  <div class="splash"></div>
+  <div class="fog"></div>
+  <div class="ship">🚢</div>
+  <div class="wave"></div>
+</div>
+
+<div class="section">
+  <h2>Ocean Features</h2>
+  <div class="card-container">
+    <div class="card">About</div>
+    <div class="card">Services</div>
+    <div class="card">Portfolio</div>
+    <div class="card">Contact</div>
+  </div>
+</div>
+
+<script>
+const cards = document.querySelectorAll('.card');
+
+window.addEventListener('scroll', () => {
+  const triggerBottom = window.innerHeight * 0.8;
+
+  cards.forEach(card => {
+    const cardTop = card.getBoundingClientRect().top;
+
+    if(cardTop < triggerBottom){
+      card.classList.add('show');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
